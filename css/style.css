@@ -1,3 +1,4 @@
+/*==========Generic CSS==========*/
 *{
 	margin: 0;
 	padding: 0;
@@ -15,3 +16,95 @@ html{
 	max-width: 1140px;
 	margin: 0 auto;
 }
+/*==========Header==========*/
+header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+h1{
+	margin: 0;
+	font-size: 240%;
+	color: #fff;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	margin-bottom: 20px;
+}
+.hero-text-box{
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+/*==========Nav==========*/
+.logo{
+	height: 100px;
+	width:auto;
+	float: left;
+	margin-top: 20px;
+}
+.main-nav{
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+.main-nav li{
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 40px;
+}
+.main-nav li a{
+	padding: 8px 0;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transition: order-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom: 2px solid #e67e22;
+}
+/*==========Btn==========*/
+.btn{
+	display: inline-block;
+	padding: 15px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 200px;
+	transition: background-color 0.2s;
+}
+
+.btn-full{
+	background-color: #e67e22;
+	border: 2px solid #e67e22;
+	margin-right: 15px;
+}
+
+.btn-full:hover{
+	background-color: #fff;
+	color: #e67e22;
+}
+
+.btn-ghost{
+	border: 2px solid #e67e22;
+	color: #e67e22;
+}
+
+.btn-ghost:hover{
+	background-color: #e67e22;
+	color: #fff;
+}
+
+/*===============
+	color:#e67e22;
+===============*/
