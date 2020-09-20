@@ -1,4 +1,8 @@
-/*==========Generic CSS==========*/
+/*
+=====================
+|	|	Generic CSS
+=====================
+*/
 *{
 	margin: 0;
 	padding: 0;
@@ -16,63 +20,116 @@ html{
 	max-width: 1140px;
 	margin: 0 auto;
 }
-/*==========Header==========*/
-header{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/hero.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
+
+section{
+	padding: 90px 0;
 }
 
+h1,h2,h3{
+
+	font-weight: 300;
+	text-transform: uppercase;
+}
 h1{
 	margin: 0;
 	font-size: 240%;
 	color: #fff;
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	word-spacing: 3px;
 	margin-bottom: 20px;
+	letter-spacing: 1px;
 }
-.hero-text-box{
-	position: absolute;
-	width: 1140px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+h2{
+	font-size: 180%;
+	word-spacing: 1px;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
 }
-/*==========Nav==========*/
-.logo{
-	height: 100px;
-	width:auto;
-	float: left;
-	margin-top: 20px;
+h2::after{
+	content: "";
+	display: block;
+	height: 2px;
+	background-color: #e67e22;
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
 }
-.main-nav{
-	float: right;
-	list-style: none;
-	margin-top: 55px;
-}
-.main-nav li{
-	display: inline-block;
-	text-decoration: none;
-	margin-left: 40px;
-}
-.main-nav li a{
-	padding: 8px 0;
-	color: #fff;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 90%;
-	border-bottom: 2px solid transparent;
-	transition: order-bottom 0.2s;
+h3{
+	font-size: 120%;
+	padding: 15px 0;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active{
-	border-bottom: 2px solid #e67e22;
+.clearfix{zoom: 1}
+.clearfix:after{
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
 }
-/*==========Btn==========*/
+/*
+====================
+|	|	Paragraphs
+====================
+*/
+.feature-des{
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%;
+	margin-bottom: 30px;
+}
+/*
+==================
+|	|	Features
+==================
+*/
+.box p{
+	line-height: 145%;
+}
+/*
+===============
+|	|	Icon
+===============
+*/
+.icon-big{
+	font-size: 400%;
+	display: block;
+	color: #e67e22;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.icon-small{
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	color: #e67e22;
+	font-size: 150% !important;
+	line-height: 150%;
+	margin-bottom: -4px;
+}
+/*
+==============
+|	|	Links
+==============
+*/
+.city-des a{
+	text-decoration: none;
+	color: #e67e22;
+	padding-bottom: 3px;
+	border-bottom: 2px solid #e67e22;
+	-webkit-transition: border-bottom 0.2s, color 0.2s;
+	transition: border-bottom 0.2s, color 0.2s; 
+}
+
+.city-des a:hover{
+	color: #000;
+	border-bottom: 2px solid transparent;
+}
+/*
+==============
+|	|	Btn
+==============
+*/
 .btn{
 	display: inline-block;
 	padding: 15px 30px;
@@ -81,6 +138,7 @@ h1{
 	text-transform: uppercase;
 	color: #fff;
 	border-radius: 200px;
+	-webkit-transition: background-color 0.2s;
 	transition: background-color 0.2s;
 }
 
@@ -104,7 +162,264 @@ h1{
 	background-color: #e67e22;
 	color: #fff;
 }
+/*
+================
+|	|	Header
+================
+*/
+header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+}
 
-/*===============
-	color:#e67e22;
-===============*/
+.hero-text-box{
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+/*
+==============
+|	|	Nav
+==============
+*/
+.logo{
+	height: 100px;
+	width:auto;
+	float: left;
+	margin-top: 20px;
+}
+.main-nav{
+	float: right;
+	list-style: none;
+	margin-top: 55px;
+}
+.main-nav li{
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 40px;
+}
+.main-nav li a{
+	padding: 8px 0;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	-webkit-transition: order-bottom 0.2s;
+	transition: order-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom: 2px solid #e67e22;
+}
+
+/*
+=========================
+|	|	Meals Show Case
+=========================
+*/
+#meals{
+	padding: 10px 0;
+}
+.meals-showcase{
+	list-style: none;
+	width: 100%;
+}
+
+.meals-showcase li{
+	display: block;
+	float: left;
+	width: 25%;
+}
+.meal-photo{
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background: #000;
+}
+
+.meal-photo img{
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, -webkit-transform 1s;
+	transition: transform 1s, opacity 1s;
+	transition: transform 1s, opacity 1s, -webkit-transform 1s;
+
+}
+
+.meal-photo img:hover{
+	-webkit-transform: scale(1.03);
+	transform: scale(1.03);
+	opacity: 1;
+}
+
+/*
+=========================
+|	|	Steps
+=========================
+*/
+#stepes{
+	background-color: #f4f4f4f4;
+}
+.steps-box:first-child{
+	text-align: right;
+	padding: 3%;
+	margin-top: 30px;
+}
+
+.steps-box:last-child{
+	padding: 3%;
+	margin-top: 70px;
+}
+.app{
+	width: 40%;	
+}
+
+.works-step{
+	margin-bottom: 50px;
+}
+.works-step:last-of-type{
+	margin-bottom: 80px;
+}
+
+.num{
+	color: #e67e22;
+	border: 2px solid #e67e22;
+	display: inline-block;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	padding: 5px;
+	float: left;
+	font-size: 150%;
+	margin-right: 20px;
+}
+
+.btn-app img{
+	height: 50px;
+	width: auto;
+	margin-right: 10px;
+}
+/*
+=======================
+|	|	City
+=======================
+*/
+.box img{
+	width: 100%;
+	height: auto; 
+	margin-bottom: 15px;
+}
+.city-des{
+	margin-bottom: 5px;
+}
+
+/*
+=======================
+|	|	Testimonial
+=======================
+*/
+#testimonial{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/back-customers.jpg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+}
+
+blockquote{
+	padding: 2%;
+	font-style: italic;
+	line-height: 145%;
+	position: relative;
+	margin-top: 40px;
+}
+
+cite{
+	font-size: 95%;
+	margin-top: 25px;
+	display: block;
+}
+
+blockquote:before{
+	content: "\201C";
+	font-size: 500%;
+	display: block;
+	position: absolute;
+	top: -5px;;
+	left: -3px;
+}
+
+cite img{
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+/*
+=======================
+|	|	Sign-Up
+=======================
+*/
+#sign-up{
+	background-color: #f4f4f4;
+}
+.plan-box{
+	background-color: #fff;
+	border-radius: 5px;
+	width: 90%;
+	margin-left: 5%;
+	box-shadow: 0 2px 2px #efefef;
+	padding-left: 15px;
+}
+
+.plan-box div{
+	padding: 15px;
+	border-bottom: 1px solid #e8e8e8;
+}
+.plan-box div:first-child{
+	background-color: #fcfcfc;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.plan-box div:last-child{
+	text-align: center;
+	border: none;
+}
+.plan-price{
+	font-size: 300%;
+	margin-bottom: 10px;
+	font-weight: 100;
+	color: #e67e22;
+}
+.plan-price span{
+	font-size: 30%;
+	font-weight: 300;
+}
+.plan-price-meal{
+	font-size: 90%;
+	padding-left: 10px;
+}
+
+.plan-box ul{
+	list-style: none;
+}
+
+.plan-box ul li{
+	padding: 5px 0;
+}
+/*
+=======================
+|	|color:#e67e22;
+=======================
+*/
