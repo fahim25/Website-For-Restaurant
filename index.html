@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 		<!--Google Fonts Lato-->
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
 		<!--Nomalize CSS-->
@@ -9,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/grid/grid.css">
 		<!--Custom CSS-->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<title>Omnifood</title>
 	</head>
 	
@@ -23,7 +26,7 @@
 					<li><a href="#meals">Food delivery </a></li>
 					<li><a href="#stepes">How it works </a></li>
 					<li><a href="#city">Our cities </a></li>
-					<li><a href="">Sign up </a></li>
+					<li><a href="#sign-up">Sign up </a></li>
 				</ul>
 			</div>
 			
@@ -282,10 +285,10 @@
 					<div>
 						<ul>
 							<li>
-								<ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal Everyday.
+								<ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal.
 							</li>
 							<li>
-								<ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order from 8 am to 12 pm.
+								<ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 8 am to 12 pm.
 							</li>
 							<li>
 								<ion-icon class="icon-small" name="close-outline"></ion-icon>Access to newest creations.
@@ -365,6 +368,120 @@
 			</div>
 		</section>
 		<!--End of Sign Up Section-->	
+		
+		<!--Contact Section-->	
+		<section id="contact">
+			<div class="row">
+				<h2>We're happy to hear from you</h2>
+			</div>
+			<div class="row">
+				<form method="post" action="#" class="contact-form">
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="name">Name</label>
+						</div>
+						
+						<div class="col span-2-of-3">
+							<input type="text" name="name" placeholder="Your Name" id="name" required>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="email">Email</label>
+						</div>
+						
+						<div class="col span-2-of-3">
+							<input type="email" name="email" placeholder="Your Email" id="email" required>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="find-us">How Did You Find Us?</label>
+						</div>
+						
+						<div class="col span-2-of-3">
+							<select name="find-us" id="find-us">
+								<option value="friends" selected>Friends</option>
+								<option value="search-engine">Search Engine</option>
+								<option value="ad">Advertisement</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>Newsletter?</label>
+						</div>
+						
+						<div class="col span-2-of-3">
+							<input type="checkbox" name="news" id="news" checked> Yes, Please.
+						</div>
+					</div>
+					
+					
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>Drop us a line</label>
+						</div>
+						
+						<div class="col span-2-of-3">
+							<textarea name="message" name="" placeholder="Your Message"></textarea>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						
+						<div class="col span-2-of-3">
+							<input class="btn btn-submit" type="submit" role="button" value="Send it!">
+						</div>
+					</div>
+					
+				</form>
+			</div>
+		</section>
+		<!--End of Contact Section-->	
+		
+		<!--Footer Section-->
+		<section id="footer">
+			<footer>
+				<div class="row">
+					<div class="col span-1-of-2">
+						<ul class="footer-nav">
+							<li><a href="#feature">About Us</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Press</a></li>
+							<li><a href="">App</a></li>
+						</ul>
+					</div>
+
+					<div class="col span-1-of-2">
+						<ul class="footer-social">
+							<li><a href="">
+									<ion-icon name="logo-facebook"></ion-icon>
+								</a></li>
+							<li><a href="">
+									<ion-icon name="logo-twitter"></ion-icon>
+								</a></li>
+							<li><a href="">
+									<ion-icon name="logo-instagram"></ion-icon>
+								</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="row">
+					<p>Copyright &copy;2020 Omnifood.</p>
+				</div>
+				
+			</footer>
+		</section>	
+		<!--End of Footer Section-->	
 		
 		<!--Ionicons-->
 		<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
