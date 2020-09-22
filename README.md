@@ -1,2 +1,3 @@
 # Website-For-Restaurant
-Creating a website for a restaurant using HTML, CSS.
+Created a website for a restaurant using HTML, CSS.
+For Live View: https://fahim25.github.io/Website-For-Restaurant/
