@@ -75,10 +75,43 @@
 	h1{
 		font-size: 180%;
 	}
+	/*Navigation Bar*/
 	.main-nav{
 		display: none;
 	}
 	
+	.main-nav{
+		float: left;
+		margin-left: 35px;
+		margin-top: 35px;
+	}
+	.main-nav li{
+		display: block;
+	}
+	
+	.main-nav li a{
+		display: block;
+		border: none;
+		padding: 10px 0;
+		font-size: 100%;
+	}
+	.mobile-nav{
+		display: inline-block;
+	}
+	.sticky .main-nav li a{
+	padding: 10px 0;
+	}
+	.sticky .main-nav{
+		margin-top: 18px;
+	}
+	.sticky .mobile-nav{
+		margin-top: 10px;
+	}
+	.sticky .mobile-nav>ion-icon{
+		color: #555;	
+	}
+	
+	/*Features*/
 	.feature-des{
 	width: 100%;
 	margin-left: 0%;
@@ -113,5 +146,5 @@
 	}
 	.contact-form{
 	width: 100%;;
-}
+	}
 }
