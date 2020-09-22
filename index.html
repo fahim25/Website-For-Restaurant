@@ -18,18 +18,21 @@
 	
 	<body>
 		<!--header-->
-		<header>
+		<header id="home">
 			<!--Nav-->
-			<div class="row">
-				<img src="img/logo-white.png" alt="omnifood" class="logo">
-				<ul class="main-nav">
-					<li><a href="#meals">Food delivery </a></li>
-					<li><a href="#stepes">How it works </a></li>
-					<li><a href="#city">Our cities </a></li>
-					<li><a href="#sign-up">Sign up </a></li>
-				</ul>
-			</div>
-			
+			<nav>
+				<div class="row">
+					<a href="#home"><img src="img/logo-white.png" href="#hero-text-box" alt="omnifood" class="logo"></a>
+					<a href="#home"><img src="img/logo.png"  alt="omnifood" class="logo-dark"></a>
+					<ul class="main-nav js--main--nav">
+						<li><a href="#meals">Food delivery </a></li>
+						<li><a href="#stepes">How it works </a></li>
+						<li><a href="#city">Our cities </a></li>
+						<li><a href="#sign-up">Sign up </a></li>
+					</ul>
+					<a class="mobile-nav js--nav"><ion-icon name="menu-outline"></ion-icon></a>
+				</div>
+			</nav>
 			<div class="hero-text-box">
 				<h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
 				<a class="btn btn-full" href="#stepes">I'm hungry</a>
@@ -485,6 +488,10 @@
 		
 		<!--Ionicons-->
 		<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+		<!--jQ-->
+		<script src="js/jquery.min.js"></script>
+		<!--WayPoint-->
+		<script src="js/jquery.waypoints.min.js"></script>
 		<!--Coustom Js-->
 		<script src="js/main.js"></script>
 	</body>
