@@ -23,7 +23,7 @@ $(function () {
 $(function () {
 	$('.js--nav').click(function(){
 		 var nav = $('.js--main--nav');
-		 var icon = $('.js--nav ion-icon');
+		 //var icon = $('.js--nav ion-icon');
 		
 		nav.slideToggle(200);
 		
